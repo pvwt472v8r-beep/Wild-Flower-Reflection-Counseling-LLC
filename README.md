@@ -13,20 +13,34 @@ From the repository root, run `python3 -m http.server 8000` and open `http://loc
 - `supervision.html`: LPCC supervision and inquiry guidance.
 - `christine.html`: introduction, credentials, education, professional profile links, and the final bio/mission insertion points.
 - `connect.html`: counseling profile links and a dedicated supervision inquiry section.
-- `styles.css`: Linen & Riverstone palette with warm linen pages (`#FBF5EA`), dusty turquoise cards and sticky header (`#D1E6E3`), and deep river-teal navigation text and buttons (`#214C50`). Full-width photo heroes are unchanged. Keep the stylesheet URL version in sync across all five pages when refreshing cached styles.
+- `styles.css`: Linen & Riverstone palette with warm linen pages (`#FBF5EA`), dusty turquoise cards and sticky header (`#D1E6E3`), and deep river-teal navigation text and buttons (`#214C50`). Keep the stylesheet URL version in sync across all five pages when refreshing cached styles.
 - `script.js`: accessible mobile navigation, optional background video, and current copyright year.
 - `image/Co Logo.jpg` and `image/WRC.jpg`: original supplied business logo and landscape photograph.
-- `image/*.webp`: resized, metadata-stripped derivatives used by the site. Responsive hero sources keep the original 2.8 MB photograph off the mobile loading path; the lower logo loads lazily.
+- `image/*.webp`: resized, metadata-stripped derivatives used by the site. The responsive hero sources avoid serving the large originals; the portrait and lower logo load lazily.
 
 The site uses system fonts and makes no requests to external font services, analytics, or embedded booking widgets. External professional profiles open in a new tab. No client information is collected by this site.
 
 Layouts adapt to phones, tablets, and desktops, with 44-pixel primary touch targets, a keyboard-operable mobile menu, native expandable FAQs, and reduced-motion support. Navigation and FAQs remain usable without JavaScript.
 
+## Hero photos
+
+Each photo fills the entire hero behind the text, without a gradient or tint. `object-fit: cover` crops the square originals to the hero's shape. Page-specific `--hero-position` and `--hero-mobile-position` values in `styles.css` preserve the main focal points on desktop and mobile. Light text sits over the naturally darker left side, with a small text shadow rather than a photo overlay.
+
+Each photo has a page-specific filename prefix:
+
+| Page | Filename prefix | Photo |
+| --- | --- | --- |
+| `index.html` | `home` | Mountain wildflowers |
+| `christine.html` | `christine` | Evergreen trail |
+| `counseling.html` | `counseling` | Alpine lake |
+| `supervision.html` | `supervision` | Autumn aspens |
+| `connect.html` | `connect` | Mountain ridgelines |
+
+For replacements, export metadata-stripped 640px, 1200px, and 1600px WebP versions without changing the original aspect ratio. Update the page's `.hero-photo` intrinsic dimensions to match the fallback source, keeping `alt=""` for these decorative photos. The `sizes` value allows for the enlarged square image needed to cover tall mobile heroes. Review the crop and text contrast at mobile and desktop widths whenever replacing a photo.
+
 ## Optional background videos
 
-Every page has one video-ready hero frame. Until approved footage is supplied, `data-src=""` remains empty: the responsive mountain image is displayed, the video control is hidden, and no video requests are made. Keep all essential meaning in the page text, not the decorative footage.
-
-Hero images and any future videos use a neutral dark gradient behind text for readability; no colored tint is applied.
+Every page has one video-ready hero frame. Until approved footage is supplied, `data-src=""` remains empty: the responsive photo is displayed, the video control is hidden, and no video requests are made. Keep all essential meaning in the page text, not the decorative footage.
 
 To enable a page's video:
 
@@ -46,7 +60,7 @@ Run `node --test tests/background-video.test.cjs` for focused video-loading, pre
 
 ## Before launch
 
-- Obtain Christine's approval of all copy and add her final first-person bio, mission statement, and professional portrait if supplied. The insertion points are marked in `christine.html`; no mission statement has been invented.
+- Obtain Christine's approval of all copy and add her final first-person bio and mission statement. The insertion points are marked in `christine.html`; no mission statement has been invented.
 - Confirm her preferred counseling intake route and supervision contact route. The initial version links to her supplied professional profiles, without claiming availability or a confirmed booking workflow.
 - Confirm location, service area, session format, fees, insurance, licensing information, and any required legal disclosures before adding them.
 - Confirm permission to publish the supplied images.
