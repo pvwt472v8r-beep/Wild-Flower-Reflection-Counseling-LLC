@@ -24,7 +24,7 @@ Layouts adapt to phones, tablets, and desktops, with 44-pixel primary touch targ
 
 ## Hero photos
 
-Each hero shows the full photo without a gradient, tint, or crop. The image sits beside the copy on desktop and above it at widths of 800px and below.
+Each photo fills the entire hero behind the text, without a gradient or tint. `object-fit: cover` crops the square originals to the hero's shape. Page-specific `--hero-position` and `--hero-mobile-position` values in `styles.css` preserve the main focal points on desktop and mobile. Light text sits over the naturally darker left side, with a small text shadow rather than a photo overlay.
 
 Each photo has a page-specific filename prefix:
 
@@ -36,7 +36,7 @@ Each photo has a page-specific filename prefix:
 | `supervision.html` | `supervision` | Autumn aspens |
 | `connect.html` | `connect` | Mountain ridgelines |
 
-For replacements, export metadata-stripped 640px, 1200px, and 1600px WebP versions without changing the original aspect ratio. Update the page's `.hero-photo` intrinsic dimensions to match the fallback source, keeping `alt=""` for these decorative photos.
+For replacements, export metadata-stripped 640px, 1200px, and 1600px WebP versions without changing the original aspect ratio. Update the page's `.hero-photo` intrinsic dimensions to match the fallback source, keeping `alt=""` for these decorative photos. The `sizes` value allows for the enlarged square image needed to cover tall mobile heroes. Review the crop and text contrast at mobile and desktop widths whenever replacing a photo.
 
 ## Optional background videos
 
