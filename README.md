@@ -13,7 +13,7 @@ From the repository root, run `python3 -m http.server 8000` and open `http://loc
 - `supervision.html`: LPCC supervision and inquiry guidance.
 - `christine.html`: introduction, credentials, education, and the final bio/mission insertion points.
 - `connect.html`: counseling profile links and a dedicated supervision inquiry section.
-- `styles.css`: earthy cream, forest green, and turquoise visual system and responsive layouts.
+- `styles.css`: forest green, sandstone, clay, and warm stone palette with full-width photo heroes and a sticky responsive header.
 - `script.js`: accessible mobile navigation, optional background video, and current copyright year.
 - `image/Co Logo.jpg` and `image/WRC.jpg`: original supplied business logo and landscape photograph.
 - `image/*.webp`: resized, metadata-stripped derivatives used by the site. Responsive hero sources keep the original 2.8 MB photograph off the mobile loading path; the lower logo loads lazily.
@@ -30,7 +30,7 @@ To enable a page's video:
 
 1. Add a licensed, locally hosted MP4 (H.264 for broad compatibility), for example `video/counseling.mp4`. Use a short, gentle, seamless loop with no flashes, text, or audio track. Aim for 720p and no more than 2 MB; review loading on a real mobile connection before publishing.
 2. In that page's `<video>` element, set `data-src="video/counseling.mp4"`. Do not add `src`, `<source>`, or `autoplay`: JavaScript attaches the source only when playback is allowed. Each page can use different footage.
-3. Keep the responsive `<img>` in the same frame as the always-available fallback. If replacing it, update its alternative text, dimensions, and responsive sources to match the new still.
+3. Keep the responsive `<img>` in the same frame as the always-available fallback. Maintain empty alternative text for decorative images, and update the dimensions and responsive sources to match the new still.
 
 Video is muted, looping, inline, and decorative. Playback is attempted only while the frame is in view and the tab is visible. A visible, keyboard-accessible Play/Pause control lets visitors stop motion; a manual pause is preserved when scrolling or switching tabs.
 
