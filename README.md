@@ -13,7 +13,7 @@ From the repository root, run `python3 -m http.server 8000` and open `http://loc
 - `supervision.html`: LPCC supervision and inquiry guidance.
 - `christine.html`: introduction, credentials, education, professional profile links, and the final bio/mission insertion points.
 - `connect.html`: counseling profile links and a dedicated supervision inquiry section.
-- `styles.css`: Linen & Riverstone palette with warm linen pages (`#FBF5EA`), dusty turquoise cards and sticky header (`#D1E6E3`), and deep river-teal navigation text and buttons (`#214C50`). Full-width photo heroes are unchanged. Keep the stylesheet URL version in sync across all five pages when refreshing cached styles.
+- `styles.css`: Linen & Riverstone palette with warm linen pages (`#FBF5EA`), dusty turquoise cards and sticky header (`#D1E6E3`), and deep river-teal navigation text and buttons (`#214C50`). Keep the stylesheet URL version in sync across all five pages when refreshing cached styles.
 - `script.js`: accessible mobile navigation, optional background video, and current copyright year.
 - `image/Co Logo.jpg` and `image/WRC.jpg`: original supplied business logo and landscape photograph.
 - `image/*.webp`: resized, metadata-stripped derivatives used by the site. Responsive hero sources keep the original 2.8 MB photograph off the mobile loading path; the lower logo loads lazily.
@@ -22,11 +22,25 @@ The site uses system fonts and makes no requests to external font services, anal
 
 Layouts adapt to phones, tablets, and desktops, with 44-pixel primary touch targets, a keyboard-operable mobile menu, native expandable FAQs, and reduced-motion support. Navigation and FAQs remain usable without JavaScript.
 
+## Hero photos
+
+The hero photo is shown without a gradient or tint; a linen panel keeps the copy readable. The current mountain meadow remains in place until the replacement photos are approved.
+
+Use the following names to identify each image upload:
+
+| Page | Upload name | Concept |
+| --- | --- | --- |
+| `index.html` | `home` | Mountain wildflowers |
+| `christine.html` | `christine` | Evergreen trail |
+| `counseling.html` | `counseling` | Alpine lake |
+| `supervision.html` | `supervision` | Autumn aspens |
+| `connect.html` | `connect` | Mountain ridgelines |
+
+Use landscape originals (ideally 16:9). Export metadata-stripped 640px and 1200px WebP versions into `image/` using the upload name as the filename prefix, such as `home-640.webp` and `home-1200.webp`. Update that page's `.hero-photo` `src`, `srcset`, and intrinsic dimensions together, keeping `alt=""` for these decorative photos. Check each crop on both narrow phones and wide desktops before publishing.
+
 ## Optional background videos
 
 Every page has one video-ready hero frame. Until approved footage is supplied, `data-src=""` remains empty: the responsive mountain image is displayed, the video control is hidden, and no video requests are made. Keep all essential meaning in the page text, not the decorative footage.
-
-Hero images and any future videos use a neutral dark gradient behind text for readability; no colored tint is applied.
 
 To enable a page's video:
 
