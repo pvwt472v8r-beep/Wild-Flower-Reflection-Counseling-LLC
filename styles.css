@@ -2,18 +2,18 @@
 
 :root {
   color-scheme: light;
-  --cream: #f3e9da;
-  --oat-light: #faf3e9;
-  --oat-deep: #e8dccb;
-  --patina: #1d4843;
-  --patina-hover: #153a36;
-  --turquoise: #b8d7d0;
-  --turquoise-light: #d0e7e1;
-  --turquoise-line: #8daca4;
-  --ink: #23332f;
-  --muted: #3f5550;
+  --cream: #fbf5ea;
+  --oat-light: #fffaf3;
+  --oat-deep: #eee5d7;
+  --patina: #214c50;
+  --patina-hover: #173a3e;
+  --turquoise: #d1e6e3;
+  --turquoise-light: #e2eeeb;
+  --turquoise-line: #9cbdb8;
+  --ink: #27383a;
+  --muted: #465b5c;
   --clay: #754d3b;
-  --line: #cbbba8;
+  --line: #d8cfc0;
   --serif: Georgia, "Times New Roman", serif;
   --sans: "Avenir Next", Avenir, "Segoe UI", sans-serif;
 }

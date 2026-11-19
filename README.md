@@ -13,7 +13,7 @@ From the repository root, run `python3 -m http.server 8000` and open `http://loc
 - `supervision.html`: LPCC supervision and inquiry guidance.
 - `christine.html`: introduction, credentials, education, and the final bio/mission insertion points.
 - `connect.html`: counseling profile links and a dedicated supervision inquiry section.
-- `styles.css`: Oat & Patina palette with oat cream pages, weathered turquoise cards, and a dark patina sticky header. Full-width photo heroes are unchanged. Keep the stylesheet URL version in sync across all five pages when refreshing cached styles.
+- `styles.css`: Linen & Riverstone palette with warm linen pages (`#FBF5EA`), dusty turquoise cards (`#D1E6E3`), and a deep river-teal sticky header and buttons (`#214C50`). Full-width photo heroes are unchanged. Keep the stylesheet URL version in sync across all five pages when refreshing cached styles.
 - `script.js`: accessible mobile navigation, optional background video, and current copyright year.
 - `image/Co Logo.jpg` and `image/WRC.jpg`: original supplied business logo and landscape photograph.
 - `image/*.webp`: resized, metadata-stripped derivatives used by the site. Responsive hero sources keep the original 2.8 MB photograph off the mobile loading path; the lower logo loads lazily.
