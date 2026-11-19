@@ -11,7 +11,7 @@ From the repository root, run `python3 -m http.server 8000` and open `http://loc
 - `index.html`: a focused welcome page with counseling and supervision previews.
 - `counseling.html`: individual counseling, therapeutic approaches, and related FAQs.
 - `supervision.html`: LPCC supervision and inquiry guidance.
-- `christine.html`: introduction, credentials, education, and the final bio/mission insertion points.
+- `christine.html`: introduction, credentials, education, professional profile links, and the final bio/mission insertion points.
 - `connect.html`: counseling profile links and a dedicated supervision inquiry section.
 - `styles.css`: Linen & Riverstone palette with warm linen pages (`#FBF5EA`), dusty turquoise cards and sticky header (`#D1E6E3`), and deep river-teal navigation text and buttons (`#214C50`). Full-width photo heroes are unchanged. Keep the stylesheet URL version in sync across all five pages when refreshing cached styles.
 - `script.js`: accessible mobile navigation, optional background video, and current copyright year.
