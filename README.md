@@ -26,6 +26,8 @@ Layouts adapt to phones, tablets, and desktops, with 44-pixel primary touch targ
 
 Every page has one video-ready hero frame. Until approved footage is supplied, `data-src=""` remains empty: the responsive mountain image is displayed, the video control is hidden, and no video requests are made. Keep all essential meaning in the page text, not the decorative footage.
 
+Hero images and any future videos use a neutral dark gradient behind text for readability; no colored tint is applied.
+
 To enable a page's video:
 
 1. Add a licensed, locally hosted MP4 (H.264 for broad compatibility), for example `video/counseling.mp4`. Use a short, gentle, seamless loop with no flashes, text, or audio track. Aim for 720p and no more than 2 MB; review loading on a real mobile connection before publishing.
