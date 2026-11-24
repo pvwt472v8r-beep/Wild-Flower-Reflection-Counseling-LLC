@@ -177,6 +177,13 @@ details p { color: var(--muted); font-size: 16px; padding-right: 28px; margin-bo
 .footer-bottom a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
 .crisis-note { font-size: 12px; color: var(--cream); margin: 12px 0 0; max-width: 890px; }
 
+@media (min-width: 601px) {
+  .christine-bio { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .christine-bio > :first-child { text-align: center; }
+  .christine-bio .christine-portrait { margin-inline: auto; }
+  .christine-bio .about-copy { width: min(100%, 1040px); margin-inline: auto; }
+}
+
 @media (max-width: 1100px) {
   .container:not(.hero) { width: calc(100% - 64px); }
   .brand-name { font-size: 19px; }
