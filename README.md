@@ -1,6 +1,6 @@
 # WildFlower Reflection Counseling LLC
 
-A responsive, dependency-free, five-page website for Christine Kayga, LPC, LPC-S. Built with semantic HTML, CSS, and JavaScript enhancements for mobile navigation and optional decorative video.
+A responsive, dependency-free, five-page website for Christine Kayga, LPC and Clinical Supervisor. Built with semantic HTML, CSS, and JavaScript enhancements for mobile navigation and optional decorative video.
 
 ## Local preview
 
@@ -11,12 +11,12 @@ From the repository root, run `python3 -m http.server 8000` and open `http://loc
 - `index.html`: a focused welcome page with counseling and supervision previews.
 - `counseling.html`: individual counseling, therapeutic approaches, and related FAQs.
 - `supervision.html`: LPCC supervision and inquiry guidance.
-- `christine.html`: introduction, credentials, education, professional profile links, and the final bio/mission insertion points.
-- `connect.html`: counseling profile links and a dedicated supervision inquiry section.
+- `christine.html`: Christine's first-person bio, counseling approach and services, credentials, professional training, recognition badge, and professional profile links. Headway appears only in this page's Professional Profiles section.
+- `connect.html`: Psychology Today link and a dedicated supervision inquiry section.
 - `styles.css`: Linen & Riverstone palette with warm linen pages (`#FBF5EA`), dusty turquoise cards and sticky header (`#D1E6E3`), and deep river-teal navigation text and buttons (`#214C50`). Keep the stylesheet URL version in sync across all five pages when refreshing cached styles.
 - `script.js`: accessible mobile navigation, optional background video, and current copyright year.
 - `image/Co Logo.jpg` and `image/WRC.jpg`: original supplied business logo and landscape photograph.
-- `image/*.webp`: resized, metadata-stripped derivatives used by the site. The responsive hero sources avoid serving the large originals; the portrait and lower logo load lazily.
+- `image/*.webp`: resized, metadata-stripped derivatives used by the site. The responsive hero sources avoid serving the large originals; the bio portrait (`image/headshot2.jpg`), recognition badge (`image/badge.jpg`), and lower logo load lazily.
 
 The site uses system fonts and makes no requests to external font services, analytics, or embedded booking widgets. External professional profiles open in a new tab. No client information is collected by this site.
 
@@ -60,8 +60,9 @@ Run `node --test tests/background-video.test.cjs` for focused video-loading, pre
 
 ## Before launch
 
-- Obtain Christine's approval of all copy and add her final first-person bio and mission statement. The insertion points are marked in `christine.html`; no mission statement has been invented.
-- Confirm her preferred counseling intake route and supervision contact route. The initial version links to her supplied professional profiles, without claiming availability or a confirmed booking workflow.
+- Confirm Christine's preferred counseling intake route and supervision contact route. The current static site collects no inquiries and has no automatic email response.
+- Before adding an inquiry form, select an appropriate form service and confirm the wording and response-time commitment for its automatic reply.
+- Confirm the published credentials, bio, badge placement, and permission to publish the supplied images. No mission statement has been invented.
 - Confirm location, service area, session format, fees, insurance, licensing information, and any required legal disclosures before adding them.
 - Confirm permission to publish the supplied images.
 - Choose hosting and a domain. Any static host can serve this repository directly; for GitHub Pages, select the `main` branch and repository root after the site changes are merged.

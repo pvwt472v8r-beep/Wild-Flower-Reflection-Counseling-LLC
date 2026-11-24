@@ -143,6 +143,13 @@ h2 { font-size: clamp(35px, 3.4vw, 47px); line-height: 1.18; letter-spacing: -1.
 .education li { font-size: 15px; line-height: 1.7; margin-top: 10px; }
 .education strong { font-weight: 500; display: block; }
 .education li span { color: var(--muted); font-size: 14px; }
+.education + .education { margin-top: 24px; }
+.bio-services { padding-left: 20px; }
+.bio-services li { margin-top: 12px; }
+.medicine-recognition { margin: 24px 0 0; border-top: 1px solid var(--line); padding-top: 21px; }
+.medicine-recognition figcaption { margin-bottom: 12px; font-family: var(--sans); font-size: 10px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; }
+.medicine-recognition a { display: block; width: min(100%, 520px); }
+.medicine-recognition img { display: block; width: 100%; height: auto; }
 .professional-profiles { border-top: 1px solid var(--line); margin-top: 24px; padding-top: 21px; }
 .professional-profiles h3 { font-family: var(--sans); font-size: 10px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 8px; }
 .professional-profiles p { font-size: 14px; }
